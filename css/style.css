@@ -42,7 +42,6 @@ body {
 }
 a:hover {
   text-decoration: underline;
-  color: var(--primaryColor);
 }
 ul,
 li,
@@ -55,4 +54,20 @@ p {
 }
 ul {
   list-style-type: none;
+}
+
+/* HEADER */
+body {
+  background: var(--wild-blue-yonder);
+}
+
+.header {
+  background: var(--dark-purple);
+}
+.header__title {
+  line-height: 2.5;
+}
+.title__link {
+  color: var(--peach-puff);
+  display: inline-block;
 }
