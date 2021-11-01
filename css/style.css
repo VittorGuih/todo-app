@@ -12,9 +12,15 @@
   --fontSize-md: 0.875rem;
   --fontSize-sm: 0.75rem;
   --fontWeight-lg: 600;
-  --fontWeight-md: 400; 
+  --fontWeight-md: 400;
   --fontWeight-sm: 200;
- 
+
+  --fiery-rose: #fc6471ff;
+  --dark-purple: #210b2cff;
+  --wild-blue-yonder: #8d9ec6ff;
+  --medium-aquamarsine: #69dc9eff;
+  --russian-violet: #392b58ff;
+  --peach-puff: #f9dbbdff;
 }
 
 /* RESETS */
