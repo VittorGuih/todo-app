@@ -3,11 +3,13 @@
 
 /* VARIABLES */
 :root {
-  --backgroundColor: #fff;
+  --background: linear-gradient(to bottom, #081830, #182e3f, #31434d);
   --primaryColor: #000;
+  --secondaryColor: #fff;
   --fontFamily: "Montserrat", sans-serif;
 
   /* FONT TYPOGRAPH */
+  --fontSize-xl: 1.5rem;
   --fontSize-lg: 1rem;
   --fontSize-md: 0.875rem;
   --fontSize-sm: 0.75rem;
@@ -37,8 +39,9 @@ body {
   margin: 0;
   padding: 0;
   font: 400 var(--fontSize-lg) var(--fontFamily);
-  background: var(--backgroundColor);
+  background: var(--background);
   letter-spacing: 1px;
+  min-height: 100vh;
 }
 a:hover {
   text-decoration: underline;
@@ -57,17 +60,70 @@ ul {
 }
 
 /* HEADER */
-body {
-  background: var(--wild-blue-yonder);
-}
 
-.header {
-  background: var(--dark-purple);
-}
+/* .header {} */
+
 .header__title {
   line-height: 2.5;
 }
 .title__link {
   color: var(--peach-puff);
   display: inline-block;
+  font-weight: var(--fontWeight-lg);
+}
+
+.todo {
+  margin-top: 1.5rem;
+  color: var(--secondaryColor);
+  min-height: 100vh;
+  border-radius: 10px;
+}
+
+/* .todo__form {} */
+
+.form__label {
+  position: relative;
+  left: 6.5rem;
+  pointer-events: none;
+  font-size: var(--fontSize-md);
+  /* HIDE LABEL UNTIL A FIND A WAY TO IMPLEMENT THIS */
+  display: none;
+}
+
+.form__input {
+  width: 20rem;
+  height: 2.5rem;
+  padding: 5px 12px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+  border: none;
+  color: var(--dark-purple);
+  font-size: var(--fontSize-md);
+}
+.form__input::placeholder {
+  color: var(--dark-purple);
+}
+.form__btn {
+  width: 2.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: var(--secondaryColor);
+  border: none;
+  cursor: pointer;
+  color: var(--wild-blue-yonder);
+  transition: 0.2s all ease;
+}
+.form__btn:hover {
+  background: var(--wild-blue-yonder);
+  color: var(--secondaryColor);
+}
+
+.btn__icon {
+  font-size: var(--fontSize-xl);
+  pointer-events: none;
 }
